@@ -1,0 +1,92 @@
+body{
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    border: 1px solid black;
+    padding:3px;
+}
+
+h1 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid black;
+    font-size: 20px;
+    color:black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#tarolo {
+    background-color: azure;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+nav{
+    background-color: rgba(192, 206, 206, 0.473);
+}
+nav ul {
+    padding-left: 0px;
+    margin:2px;
+    border: 1px solid black;
+    background-color: rgb(172, 172, 173);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 80px 50px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    border: 1px solid red;
+    color:red;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+.nagykep {
+   width: 100%;
+   border: 1px solid black;
+}
+
+.galeria {
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+@media screen and (max-width:650px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media screen and (max-width:500px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
